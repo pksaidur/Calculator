@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="javascript/text" src="demo.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        function x1(val){
+        form.displayResult.value=form.displayResult.value+val;
+            }
+        function massage(){
+                var qq=eval(document.getElementById('dis1').value);
+                if(qq=='' || qq==null){
+                    document.getElementById('dis1').value="Please Enter number";
+            }
+            else{ 
+                 document.getElementById('dis1').value=qq;
+            }
+           }
+        function Clean(){
+          document.getElementById('dis1').value=" ";
+         }
+        </script>
+<form name="form">
+<input id="dis1" type='text' value="" name="displayResult">
+<div>
+    <input id="bu" type="button" value="1" onclick="x1(1)">
+    <input id="bu" type="button" value="2" onclick="x1(2)">
+    <input id="bu" type="button" value="3" onclick="x1(3)">
+    <input id="bu" type="button" value="4" onclick="x1(4)">
+    <input id="bu" type="button" value="5" onclick="x1(5)">
+    </div>
+<div>
+     <input id="bu" type="button" value="6" onclick="x1(6)">
+     <input id="bu" type="button" value="7" onclick="x1(7)">
+     <input id="bu" type="button" value="8" onclick="x1(8)">
+     <input id="bu" type="button" value="9" onclick="x1(9)">
+     <input id="bu" type="button" value="0" onclick="x1(0)">
+     </div>
+<div>
+        <input id="bu" type="button" value="+" onclick="x1('+')">
+        <input id="bu" type="button" value="-" onclick="x1('-')">
+        <input id="bu" type="button" value="*" onclick="x1('*')">
+        <input id="bu" type="button" value="/" onclick="x1('/')">
+        <input id="bu" type="button" value="%" onclick="x1('%')">
+        </div>
+        <div>
+            <input id="bu" type="button" value="=" onclick="massage()">
+            <input id="bu" type="button" value="Del" onclick="Clean()">
+            <input id="bu" type="button" value="pi" onclick="x1(3.1416)">
+            <input id="bu" type="button" value="F" onclick="x1()">
+            <input id="bu" type="button" value="C" onclick='x1()'>
+            </div>
+</form>
+<input type="button" value="massage" name="massage" onclick="massage()">
+</body>
+</html>
