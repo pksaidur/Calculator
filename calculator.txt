@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="javascript/text" src="demo.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        function x1(val){
+        form.displayResult.value=form.displayResult.value+val;
+            }
+        </script>
+<form name="form">
+<input id="dis1" type='text' value="" name="displayResult">
+<div>
+    <input id="bu" type="button" value="1" onclick="x1(1)">
+    <input id="bu" type="button" value="2" onclick="x1(2)">
+    <input id="bu" type="button" value="3" onclick="x1(3)">
+    <input id="bu" type="button" value="4" onclick="x1(4)">
+    <input id="bu" type="button" value="5" onclick="x1(5)">
+    </div>
+<div>
+     <input id="bu" type="button" value="6" onclick="x1(6)">
+     <input id="bu" type="button" value="7" onclick="x1(7)">
+     <input id="bu" type="button" value="8" onclick="x1(8)">
+     <input id="bu" type="button" value="9" onclick="x1(9)">
+     <input id="bu" type="button" value="0" onclick="x1(0)">
+     </div>
+<div>
+        <input id="bu" type="button" value="+" onclick="x1('+')">
+        <input id="bu" type="button" value="-" onclick="x1('-')">
+        <input id="bu" type="button" value="*" onclick="x1('*')">
+        <input id="bu" type="button" value="/" onclick="x1('/')">
+        <input id="bu" type="button" value="%" onclick="x1('%')">
+        </div>
+        <div>
+            <input id="bu" type="button" value="=" onclick="x1('=')">
+            <input id="bu" type="button" value="Del" onclick="x1(del)">
+            <input id="bu" type="button" value="pi" onclick="x1(3.1416)">
+            <input id="bu" type="button" value="F" onclick="x1(F)">
+            <input id="bu" type="button" value="C" onclick="x1(C)">
+            </div>
+</form>
+<script>
+function massage(){
+     var qq=document.getElementById('dis1').value;
+     var qq1=qq.length;
+     document.writeln(qq1);
+     
+}
+</script>
+<input type="button" value="massage" name="massage" onclick="massage()">
+</body>
+</html>
