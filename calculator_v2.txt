@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+<script>
+
+       function x1(val){
+        form.displayResult.value=form.displayResult.value+val;
+            }
+        function equaL(){
+              var  qq=eval(document.getElementById('dis1').value);
+                if(qq=='' || qq==null){
+                    document.getElementById('dis1').value="Invalid input";
+            }
+            else{ 
+                 document.getElementById('dis1').value=qq.toFixed(2);
+            }
+           }
+        function cleaN(){
+          document.getElementById('dis1').value='';
+         }
+        function dollaR(){
+            var dol=eval((document.getElementById('dis1').value)*84.42);
+            document.getElementById('dis1').value=dol;
+        }
+        function exiT() {
+            var x = document.getElementById("forM");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+</script>
+<button id="exiT" onclick="exiT()">Show/Hide</button>
+</head>
+<body>
+<form name="form" id="forM" >
+    <input id="dis1" type='text' value="" name="displayResult">
+    <div id="body">
+    <div>
+    <input class="bu" type="button" value="7" onclick="x1(7)">
+    <input class="bu" type="button" value="8" onclick="x1(8)">
+    <input class="bu" type="button" value="9" onclick="x1(9)">
+    <input class="bu" type="button" value="Del" onclick="cleaN()">
+</div>
+<div>
+    <input class="bu" type="button" value="4" onclick="x1(4)">
+    <input class="bu" type="button" value="5" onclick="x1(5)">
+    <input class="bu" type="button" value="6" onclick="x1(6)">
+    <input class="bu" type="button" value="/" onclick="x1('/')">
+</div>
+<div>
+    <input class="bu" type="button" value="1" onclick="x1(1)">
+    <input class="bu" type="button" value="2" onclick="x1(2)">
+    <input class="bu" type="button" value="3" onclick="x1(3)">
+    <input class="bu" type="button" value="*" onclick="x1('*')">
+</div>
+<div>
+    <input class="bu" type="button" value="0" onclick="x1(0)">
+    <input class="bu" type="button" value="." onclick="x1('.')">
+    <input class="bu" type="button" value="=" onclick="equaL()">
+    <input class="bu" type="button" value="-" onclick="x1('-')">
+</div>
+<div>
+    <input class="bu" type="button" value="T-D" onclick="dollaR()">
+    <input class="bu" type="button" value="pi" onclick="x1(3.1416)">
+    <input id="pluS" class="bu" type="button" value="+" onclick="x1('+')">
+</div>
+<p>T-D: convert taka to doller <span>[By: PK]</span></p>
+</div>
+</form>
+<style>
+#forM{
+    background-color: rgb(15, 121, 12);
+    width:350px;
+    height: 450px;
+    border-radius: 5px;
+}
+#dis1{
+    width: 300px;
+    height: 50px;
+    font-style: font-family: "Gill Sans", sans-serif;
+    font-size: 44px;
+    text-align: right;
+    margin:20px;
+    border-radius: 5px;
+}
+#dis1:hover{
+  width: 320px;
+  height: 50px;
+  
+  -webkit-transition: width .5s; /* Safari prior 6.1 */
+  transition: width .5s;
+}
+#body{
+    padding-left: 23px;
+}
+.bu{
+  width: 72px;
+  height: 60px;
+  margin:0px 0px 3px;
+  border-radius: 5px;
+  text-align:center;
+  font-size: 28px;
+  color: white;
+  background: rgb(9, 153, 33);
+}
+.bu:hover{
+    color: rgb(35, 83, 7);
+    box-shadow: 12px;
+}
+#pluS{
+    width: 149px;
+}
+#exiT{
+    width: 80px;
+    height: 40px;
+    margin:0px 0px 3px;
+    border-radius: 5px;
+    text-align:center;
+    font-size: 15px;
+    color: white;
+    background: rgb(228, 71, 31);
+}
+</style>
+</body>
+</html>
