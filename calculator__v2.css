@@ -1,0 +1,52 @@
+#forM{
+    background-color: rgb(15, 121, 12);
+    width:350px;
+    height: 450px;
+    border-radius: 5px;
+}
+#dis1{
+    width: 300px;
+    height: 50px;
+    font-style: font-family: "Gill Sans", sans-serif;
+    font-size: 44px;
+    text-align: right;
+    margin:20px;
+    border-radius: 5px;
+}
+#dis1:hover{
+  width: 320px;
+  height: 50px;
+  
+  -webkit-transition: width .5s; /* Safari prior 6.1 */
+  transition: width .5s;
+}
+#body{
+    padding-left: 23px;
+}
+.bu{
+  width: 72px;
+  height: 60px;
+  margin:0px 0px 3px;
+  border-radius: 5px;
+  text-align:center;
+  font-size: 28px;
+  color: white;
+  background: rgb(9, 153, 33);
+}
+.bu:hover{
+    color: rgb(35, 83, 7);
+    box-shadow: 12px;
+}
+#pluS{
+    width: 149px;
+}
+#exiT{
+    width: 80px;
+    height: 40px;
+    margin:0px 0px 3px;
+    border-radius: 5px;
+    text-align:center;
+    font-size: 15px;
+    color: white;
+    background: rgb(228, 71, 31);
+}
